@@ -6,15 +6,40 @@
         xmlns:local="clr-namespace:WPF_Notepad"
         mc:Ignorable="d"
         Title="WPF Notepad Application" Height="600" Width="800"
-        WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip">
+        WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" MinWidth="300" MinHeight="300">
     <Grid Background="#FFF7F7F7">
         <TextBox Margin="10,40,10,10" TextWrapping="Wrap"  VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True"/>
         <Menu Height="40" VerticalAlignment="Top" Margin="10,0,10,0" >
-            <MenuItem Header="_File" Height="40" Padding="10" Cursor="Hand"/>
-            <MenuItem Header="_Edit" Height="40" Padding="10" Cursor="Hand"/>
-            <MenuItem Header="_Format" Height="40" Padding="10" Cursor="Hand"/>
-            <MenuItem Header="_View" Height="40" Padding="10" Cursor="Hand"/>
-            <MenuItem Header="_About" Height="40" Padding="10" Cursor="Hand"/>
+            <MenuItem Header="_File" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem Header="New" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header="Open" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header="Save" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header="Save As" Padding="10,0,0,0" Height="32"/>
+                <Separator/>
+                <MenuItem Header="Exit" Padding="10"/>
+            </MenuItem>
+            <MenuItem Header="_Edit" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem Header="Undo" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header="Redo" Padding="10,0,0,0" Height="32"/>
+                <Separator/>
+                <MenuItem Header="Cut" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header="Copy" Padding="10,0,0,0" Height="32" />
+                <MenuItem Header="Paste" Padding="10,0,0,0" Height="32"/>
+                <Separator/>
+                <MenuItem Header="Select All" Padding="10,0,0,0" Height="32"/>
+            </MenuItem>
+            <MenuItem Header="_Format" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem Header="Word Wrap" Padding="10,0,0,0" Height="32"/>
+            </MenuItem>
+            <MenuItem Header="_View" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem Header="Zoom In" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header="Zoom Out" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header="Default Zoom" Padding="10,0,0,0" Height="32"/>
+            </MenuItem>
+            <MenuItem Header="_Help" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem Header="Help" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header="About Us" Padding="10,0,0,0" Height="32"/>
+            </MenuItem>
         </Menu>
 
     </Grid>
