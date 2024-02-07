@@ -8,15 +8,14 @@
         Title="WPF Notepad Application" Height="600" Width="800"
         WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" MinWidth="300" MinHeight="300">
     <Grid Background="#FFF7F7F7">
-        <TextBox Margin="10,40,10,10" TextWrapping="Wrap"  VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+        <TextBox x:Name="text_box" Margin="10,40,10,10" TextWrapping="Wrap" FontSize="16" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" FontFamily="Comic Sans MS"/>
         <Menu Height="40" VerticalAlignment="Top" Margin="10,0,10,0" >
             <MenuItem Header="_File" Height="40" Padding="10" Cursor="Hand">
-                <MenuItem Header="New" Padding="10,0,0,0" Height="32"/>
-                <MenuItem Header="Open" Padding="10,0,0,0" Height="32"/>
-                <MenuItem Header="Save" Padding="10,0,0,0" Height="32"/>
-                <MenuItem Header="Save As" Padding="10,0,0,0" Height="32"/>
+                <MenuItem x:Name="new_butt" Header="New" Padding="10,0,0,0" Height="32" Click="new_butt_Click"/>
+                <MenuItem x:Name="open_butt" Header="Open" Padding="10,0,0,0" Height="32" Click="open_butt_Click"/>
+                <MenuItem x:Name="save_butt" Header="Save As" Padding="10,0,0,0" Height="32" Click="save_butt_Click"/>
                 <Separator/>
-                <MenuItem Header="Exit" Padding="10"/>
+                <MenuItem x:Name="exit_butt" Header="Exit" Padding="10" Click="exit_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_Edit" Height="40" Padding="10" Cursor="Hand">
                 <MenuItem Header="Undo" Padding="10,0,0,0" Height="32"/>

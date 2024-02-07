@@ -24,6 +24,50 @@ namespace WPF_Notepad
             InitializeComponent();
         }
 
-       
+
+        // File Buttons
+        #region fileButtons
+        private void new_butt_Click(object sender, RoutedEventArgs e)
+        {
+            text_box.Text = string.Empty;
+            text_box.Focus();
+        }
+
+        private void open_butt_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            //--------------------
+            openFileDialog.Filter = "Text Files|*.txt";
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            //--------------------
+            openFileDialog.ShowDialog();
+            //--------------------
+            if (openFileDialog.FileName != null)
+            {
+                text_box.Text = System.IO.File.ReadAllText(openFileDialog.FileName, Encoding.UTF8);
+            }
+        }
+
+        private void save_butt_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.SaveFileDialog saveFile = new Microsoft.Win32.SaveFileDialog();
+            //--------------------
+            saveFile.Filter = "Text Files|*.txt";
+            saveFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            saveFile.AddExtension = true;
+            //--------------------
+            saveFile.ShowDialog();
+            //--------------------
+            if (saveFile.FileName != null)
+            {
+                System.IO.File.WriteAllText(saveFile.FileName, text_box.Text, Encoding.UTF8);
+            }
+        }
+
+        private void exit_butt_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+        #endregion
     }
 }
