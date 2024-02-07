@@ -6,8 +6,16 @@
         xmlns:local="clr-namespace:WPF_Notepad"
         mc:Ignorable="d"
         Title="WPF Notepad Application" Height="600" Width="800"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip">
     <Grid Background="#FFF7F7F7">
+        <TextBox Margin="10,40,10,10" TextWrapping="Wrap"  VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+        <Menu Height="40" VerticalAlignment="Top" Margin="10,0,10,0" >
+            <MenuItem Header="_File" Height="40" Padding="10" Cursor="Hand"/>
+            <MenuItem Header="_Edit" Height="40" Padding="10" Cursor="Hand"/>
+            <MenuItem Header="_Format" Height="40" Padding="10" Cursor="Hand"/>
+            <MenuItem Header="_View" Height="40" Padding="10" Cursor="Hand"/>
+            <MenuItem Header="_About" Height="40" Padding="10" Cursor="Hand"/>
+        </Menu>
 
     </Grid>
 </Window>

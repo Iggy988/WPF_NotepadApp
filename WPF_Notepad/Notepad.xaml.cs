@@ -23,5 +23,7 @@ namespace WPF_Notepad
         {
             InitializeComponent();
         }
+
+       
     }
 }
