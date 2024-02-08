@@ -11,6 +11,9 @@
         <TextBox x:Name="text_box" Margin="10,40,10,10" TextWrapping="Wrap" FontSize="16" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" FontFamily="Comic Sans MS"/>
         <Menu Height="40" VerticalAlignment="Top" Margin="10,0,10,0" >
             <MenuItem Header="_File" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image Source="/file.png"></Image>
+                </MenuItem.Icon>
                 <MenuItem x:Name="new_butt" Header="New" Padding="10,0,0,0" Height="32" Click="new_butt_Click"/>
                 <MenuItem x:Name="open_butt" Header="Open" Padding="10,0,0,0" Height="32" Click="open_butt_Click"/>
                 <MenuItem x:Name="save_butt" Header="Save As" Padding="10,0,0,0" Height="32" Click="save_butt_Click"/>
@@ -18,6 +21,9 @@
                 <MenuItem x:Name="exit_butt" Header="Exit" Padding="10" Click="exit_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_Edit" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image Source="/edit.png" ></Image>
+                </MenuItem.Icon>
                 <MenuItem x:Name="undo_butt" Header="Undo" Padding="10,0,0,0" Height="32" Click="undo_butt_Click"/>
                 <MenuItem x:Name="redo_butt" Header="Redo" Padding="10,0,0,0" Height="32" Click="redo_butt_Click"/>
                 <Separator/>
@@ -27,15 +33,24 @@
                 <Separator/>
                 <MenuItem x:Name="select_all_butt" Header="Select All" Padding="10,0,0,0" Height="32" Click="select_all_butt_Click"/>
             </MenuItem>
-            <MenuItem Header="_Format" Height="40" Padding="10" Cursor="Hand">
+            <MenuItem Header="Forma_t" Height="40" Padding="10,10,10,10" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image  Source="/format.png" ></Image>
+                </MenuItem.Icon>
                 <MenuItem x:Name="wrap_butt" Header="Word Wrap" Padding="10,0,0,0" Height="32" IsCheckable="True" IsChecked="True"  Click="wrap_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_View" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image Source="/view.png"></Image>
+                </MenuItem.Icon>
                 <MenuItem x:Name="zoom_in_butt" Header="Zoom In" Padding="10,0,0,0" Height="32" Click="zoom_in_butt_Click"/>
                 <MenuItem x:Name="zoom_out_butt" Header="Zoom Out" Padding="10,0,0,0" Height="32" Click="zoom_out_butt_Click"/>
                 <MenuItem x:Name="default_zoom_butt" Header="Default Zoom" Padding="10,0,0,0" Height="32" Click="default_zoom_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_Help" Height="40" Padding="10" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image Source="/help.png"></Image>
+                </MenuItem.Icon>
                 <MenuItem x:Name="help_button" Header=" View Help" Padding="10,0,0,0" Height="32" Click="help_button_Click"/>
                 <MenuItem x:Name="about_button" Header="About Us" Padding="10,0,0,0" Height="32" Click="about_button_Click"/>
             </MenuItem>
