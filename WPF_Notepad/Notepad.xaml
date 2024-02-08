@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:WPF_Notepad"
         mc:Ignorable="d"
         Title="WPF Notepad Application" Height="600" Width="800"
-        WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" MinWidth="300" MinHeight="300">
+        WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" MinWidth="300" MinHeight="300" Icon="/notepad.png">
     <Grid Background="#FFF7F7F7">
-        <TextBox x:Name="text_box" Margin="10,40,10,10" TextWrapping="Wrap" FontSize="16" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="text_box" Text="Have fun, and start writing..." Margin="10,40,10,10" TextWrapping="Wrap" FontSize="16" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" FontFamily="Comic Sans MS"/>
         <Menu Height="40" VerticalAlignment="Top" Margin="10,0,10,0" >
             <MenuItem Header="_File" Height="40" Padding="10" Cursor="Hand">
                 <MenuItem.Icon>

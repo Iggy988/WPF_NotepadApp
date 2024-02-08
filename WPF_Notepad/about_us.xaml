@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPF_Notepad"
         mc:Ignorable="d"
         Title="About Us" Height="370" Width="475"
-        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="#FFFBFFE2">
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="#FFFBFFE2" Icon="/notepad.png">
     <Grid>
         <Button x:Name="ok_butt" Content="Ok" Margin="325,269,0,0" Click="ok_butt_Click" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" RenderTransformOrigin="-0.222,1.502"/>
         <Image HorizontalAlignment="Left" Margin="40,34,0,0" Width="100" Source="/notepad.png" Height="80" VerticalAlignment="Top"/>
