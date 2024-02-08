@@ -144,5 +144,16 @@ namespace WPF_Notepad
             text_box.FontSize = 16;
         }
         #endregion
+
+        private void help_button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This is Help MessageBox", "Help Section");
+        }
+
+        private void about_button_Click(object sender, RoutedEventArgs e)
+        {
+            WPF_Notepad.about_us ab = new about_us();
+            ab.ShowDialog();
+        }
     }
 }

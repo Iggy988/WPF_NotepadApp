@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_Notepad.about_us"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Notepad"
+        mc:Ignorable="d"
+        Title="About Us" Height="370" Width="475"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="#FFFBFFE2">
+    <Grid>
+        <Button x:Name="ok_butt" Content="Ok" Margin="325,269,0,0" Click="ok_butt_Click" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" RenderTransformOrigin="-0.222,1.502"/>
+        <Image HorizontalAlignment="Left" Margin="40,34,0,0" Width="100" Source="/notepad.png" Height="80" VerticalAlignment="Top"/>
+        <Label Content="WPF Notepad App" Margin="0,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center" Width="166" Height="32"/>
+        <Label Content="All rights reserved for Iggy Design Company!" VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Center" Margin="0,166,0,0"/>
+        <Label Content="2014-2024" VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Center" Margin="0,200,0,0"/>
+
+
+    </Grid>
+</Window>

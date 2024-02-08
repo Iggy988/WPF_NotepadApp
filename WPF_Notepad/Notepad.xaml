@@ -36,8 +36,8 @@
                 <MenuItem x:Name="default_zoom_butt" Header="Default Zoom" Padding="10,0,0,0" Height="32" Click="default_zoom_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_Help" Height="40" Padding="10" Cursor="Hand">
-                <MenuItem Header=" View Help" Padding="10,0,0,0" Height="32"/>
-                <MenuItem Header="About Us" Padding="10,0,0,0" Height="32"/>
+                <MenuItem x:Name="help_button" Header=" View Help" Padding="10,0,0,0" Height="32" Click="help_button_Click"/>
+                <MenuItem x:Name="about_button" Header="About Us" Padding="10,0,0,0" Height="32" Click="about_button_Click"/>
             </MenuItem>
         </Menu>
 
