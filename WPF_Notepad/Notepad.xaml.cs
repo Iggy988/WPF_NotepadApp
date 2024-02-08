@@ -69,5 +69,40 @@ namespace WPF_Notepad
             Close();
         }
         #endregion
+
+        // Edit Buttons
+        #region editButtons
+        private void undo_butt_Click(object sender, RoutedEventArgs e)
+        {
+            text_box.Undo();
+        }
+
+        private void redo_butt_Click(object sender, RoutedEventArgs e)
+        {
+            text_box.Redo();
+        }
+
+        private void cut_butt_Click(object sender, RoutedEventArgs e)
+        {
+            text_box.Cut();
+        }
+
+        private void copy_butt_Click(object sender, RoutedEventArgs e)
+        {
+            text_box.Copy();
+        }
+
+        private void paste_butt_Click(object sender, RoutedEventArgs e)
+        {
+            text_box.Paste();
+        }
+        
+
+        private void select_all_butt_Click(object sender, RoutedEventArgs e)
+        {
+            text_box.Focus();
+            text_box.SelectAll();
+        }
+        #endregion
     }
 }

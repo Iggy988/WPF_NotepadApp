@@ -18,14 +18,14 @@
                 <MenuItem x:Name="exit_butt" Header="Exit" Padding="10" Click="exit_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_Edit" Height="40" Padding="10" Cursor="Hand">
-                <MenuItem Header="Undo" Padding="10,0,0,0" Height="32"/>
-                <MenuItem Header="Redo" Padding="10,0,0,0" Height="32"/>
+                <MenuItem x:Name="undo_butt" Header="Undo" Padding="10,0,0,0" Height="32" Click="undo_butt_Click"/>
+                <MenuItem x:Name="redo_butt" Header="Redo" Padding="10,0,0,0" Height="32" Click="redo_butt_Click"/>
                 <Separator/>
-                <MenuItem Header="Cut" Padding="10,0,0,0" Height="32"/>
-                <MenuItem Header="Copy" Padding="10,0,0,0" Height="32" />
-                <MenuItem Header="Paste" Padding="10,0,0,0" Height="32"/>
+                <MenuItem x:Name="cut_butt" Header="Cut" Padding="10,0,0,0" Height="32" Click="cut_butt_Click"/>
+                <MenuItem x:Name="copy_butt" Header="Copy" Padding="10,0,0,0" Height="32" Click="copy_butt_Click"/>
+                <MenuItem x:Name="paste_butt" Header="Paste" Padding="10,0,0,0" Height="32" Click="paste_butt_Click"/>
                 <Separator/>
-                <MenuItem Header="Select All" Padding="10,0,0,0" Height="32"/>
+                <MenuItem x:Name="select_all_butt" Header="Select All" Padding="10,0,0,0" Height="32" Click="select_all_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_Format" Height="40" Padding="10" Cursor="Hand">
                 <MenuItem Header="Word Wrap" Padding="10,0,0,0" Height="32"/>
