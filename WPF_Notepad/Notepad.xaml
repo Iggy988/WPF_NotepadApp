@@ -8,7 +8,7 @@
         Title="WPF Notepad Application" Height="600" Width="800"
         WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" MinWidth="300" MinHeight="300">
     <Grid Background="#FFF7F7F7">
-        <TextBox x:Name="text_box" Margin="10,40,10,10" TextWrapping="Wrap" FontSize="16" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="text_box" Margin="10,40,10,10" TextWrapping="Wrap" FontSize="16" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" FontFamily="Comic Sans MS"/>
         <Menu Height="40" VerticalAlignment="Top" Margin="10,0,10,0" >
             <MenuItem Header="_File" Height="40" Padding="10" Cursor="Hand">
                 <MenuItem x:Name="new_butt" Header="New" Padding="10,0,0,0" Height="32" Click="new_butt_Click"/>
@@ -28,7 +28,7 @@
                 <MenuItem x:Name="select_all_butt" Header="Select All" Padding="10,0,0,0" Height="32" Click="select_all_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_Format" Height="40" Padding="10" Cursor="Hand">
-                <MenuItem Header="Word Wrap" Padding="10,0,0,0" Height="32"/>
+                <MenuItem x:Name="wrap_butt" Header="Word Wrap" Padding="10,0,0,0" Height="32" IsCheckable="True" IsChecked="True"  Click="wrap_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_View" Height="40" Padding="10" Cursor="Hand">
                 <MenuItem Header="Zoom In" Padding="10,0,0,0" Height="32"/>
@@ -36,7 +36,7 @@
                 <MenuItem Header="Default Zoom" Padding="10,0,0,0" Height="32"/>
             </MenuItem>
             <MenuItem Header="_Help" Height="40" Padding="10" Cursor="Hand">
-                <MenuItem Header="Help" Padding="10,0,0,0" Height="32"/>
+                <MenuItem Header=" View Help" Padding="10,0,0,0" Height="32"/>
                 <MenuItem Header="About Us" Padding="10,0,0,0" Height="32"/>
             </MenuItem>
         </Menu>

@@ -104,5 +104,19 @@ namespace WPF_Notepad
             text_box.SelectAll();
         }
         #endregion
+
+        private void wrap_butt_Click(object sender, RoutedEventArgs e)
+        {
+            if (wrap_butt.IsChecked == true)
+            {
+                text_box.TextWrapping = TextWrapping.Wrap;
+                text_box.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+            }
+            else
+            {
+                text_box.TextWrapping = TextWrapping.NoWrap;
+                text_box.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+            }
+        }
     }
 }
