@@ -37,7 +37,7 @@ namespace WPF_Notepad
         {
             Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
             //--------------------
-            openFileDialog.Filter = "Text Files|*.txt";
+            openFileDialog.Filter = "Text files (*.txt)|*.txt|CSV files (*.csv)|*.csv";
             openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             //--------------------
             openFileDialog.ShowDialog();
@@ -52,7 +52,7 @@ namespace WPF_Notepad
         {
             Microsoft.Win32.SaveFileDialog saveFile = new Microsoft.Win32.SaveFileDialog();
             //--------------------
-            saveFile.Filter = "Text Files|*.txt";
+            saveFile.Filter = "Text files (*.txt)|*.txt|CSV files (*.csv)|*.csv";
             saveFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             saveFile.AddExtension = true;
             //--------------------
