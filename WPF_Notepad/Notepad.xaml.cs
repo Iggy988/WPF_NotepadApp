@@ -118,5 +118,31 @@ namespace WPF_Notepad
                 text_box.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
             }
         }
+
+        // Zoom Buttons
+        #region zoomButtons
+        private void zoom_in_butt_Click(object sender, RoutedEventArgs e)
+        {
+            if (text_box.FontSize + 4 < 100)
+            {
+                text_box.FontSize = text_box.FontSize + 4;
+            }
+            
+        }
+
+        private void zoom_out_butt_Click(object sender, RoutedEventArgs e)
+        {
+            if (text_box.FontSize - 4 > 4)
+            {
+                text_box.FontSize = text_box.FontSize - 4;
+            }
+            
+        }
+
+        private void default_zoom_butt_Click(object sender, RoutedEventArgs e)
+        {
+            text_box.FontSize = 16;
+        }
+        #endregion
     }
 }

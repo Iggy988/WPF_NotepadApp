@@ -31,9 +31,9 @@
                 <MenuItem x:Name="wrap_butt" Header="Word Wrap" Padding="10,0,0,0" Height="32" IsCheckable="True" IsChecked="True"  Click="wrap_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_View" Height="40" Padding="10" Cursor="Hand">
-                <MenuItem Header="Zoom In" Padding="10,0,0,0" Height="32"/>
-                <MenuItem Header="Zoom Out" Padding="10,0,0,0" Height="32"/>
-                <MenuItem Header="Default Zoom" Padding="10,0,0,0" Height="32"/>
+                <MenuItem x:Name="zoom_in_butt" Header="Zoom In" Padding="10,0,0,0" Height="32" Click="zoom_in_butt_Click"/>
+                <MenuItem x:Name="zoom_out_butt" Header="Zoom Out" Padding="10,0,0,0" Height="32" Click="zoom_out_butt_Click"/>
+                <MenuItem x:Name="default_zoom_butt" Header="Default Zoom" Padding="10,0,0,0" Height="32" Click="default_zoom_butt_Click"/>
             </MenuItem>
             <MenuItem Header="_Help" Height="40" Padding="10" Cursor="Hand">
                 <MenuItem Header=" View Help" Padding="10,0,0,0" Height="32"/>
